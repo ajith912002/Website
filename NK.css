@@ -1,0 +1,141 @@
+
+*{
+   padding: 0;
+   margin: 0;
+   font-family: 'Poppins', sans-serif;
+   box-sizing: border-box;
+}
+
+
+body{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: black;
+}
+
+nav{
+    width: 100%;
+    height: 10vh;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .logo img{
+    margin-left: 20px;
+    width: 100px;
+    filter: drop-shadow(2px 2px 2px white);
+}
+
+.links a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    margin: 0 20px;
+}
+
+.links a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    background-color: #f74f10;
+    height: 3.5px;
+}
+
+.links a:hover::before,
+.links a:hover{
+    color: #f74f10;
+    width: 100%;
+}
+
+.search span{
+    color: white;
+    cursor: pointer;
+    font-size: 1.3rem;
+    margin-right: 20px;
+}
+
+section{
+    width: 100%;
+    height: 90vh;
+}
+
+section .content{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content .main-content{
+    color: white;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto; 
+    align-content: center;
+    min-width: 100px;
+}
+
+.content h1{
+    font-size: clamp(2rem, 1rem + 5vw,4rem);
+
+}
+
+.content h2{
+    color: #f74f10;
+    font-size: clamp(2rem, 1rem + 5vw,3.5rem);
+}
+
+.main-content p{
+    margin-top: 10px;
+    color: #635e5c;
+}
+
+.order{
+    display: flex;
+    margin: 20px 10px;
+    width: 100%;
+    justify-content: space-around;
+    min-height: 7vh;
+}
+
+.order h3{
+    font-size: 1.8rem;
+    margin-left: 10px;
+}
+
+.order button{
+    min-width: 50%;
+    margin-left: 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: #f74f10;
+    color: white;
+    font-weight: 700;
+    padding: 0 2px;
+    font-size: clamp(0.6rem, 1rem 5vw, 3rem);
+    
+}
+
+.order button:hover{
+    box-shadow: 0 0 30px #f74f10;    
+}
+
+.image img{
+    min-width: 350px;
+    width: 100%;
+    margin-right: 100px;
+    transform: rotate(40deg);
+    filter: drop-shadow(-10px -10px 200px #f74f10);
+}
